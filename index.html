@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<style type="text/css">
 		html {scroll-behavior: smooth}
 		body {background-color: black;color: white;font-family: Trebuchet MS; font-size: 25px; margin: 10px}
@@ -10,18 +10,27 @@
 		 a:hover {
                 background-color: green;
 		}
-
-{
-  box-sizing: border-box;
+		<style>
+.zoom {
+  padding: 50px;
+  background-color: green;
+  transition: transform .2s; /* Animation */
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
 }
-
 
 .zoom:hover {
-
-  transform: scale(1.5); 
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
+
+
+
+
+
 }
 	</style>
+	<div class="zoom"></div>
 	<title>Index</title>
 </head>
 <body>
@@ -40,6 +49,6 @@
 	<br>
 	<iframe id="frame" height="640px" width="100%"  name="iframe_a" frameborder="0"></iframe>
 </center>
-	<div class="zoom"></div>
+	
 </body>
 </html>
